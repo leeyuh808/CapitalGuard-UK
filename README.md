@@ -47,7 +47,7 @@ ______________________________________________________________
 
 ## **Project Goal (Ongoing)**
 
-CapitalGuard UK is being built to help traders and investors manage their tax exposure **as they trade**, not months later. Instead of discovering a large tax bill at year-end, users can see — in real time — exactly where they stand relative to their £3,000 CGT allowance.
+CapitalGuard UK is being built to help traders and investors manage their tax exposure **as they trade**, not months later. Instead of discovering a large tax bill at year-end, users can see (in real time) exactly where they stand relative to their £3,000 CGT allowance.
 
 The aim is to turn tax compliance into a continuous, automated insight rather than a stressful annual task.
 
