@@ -1,0 +1,9 @@
+{% load static %} <!DOCTYPE html>
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+    <h2>Account Settings</h2>
+    <p>Logged in as: <strong>{{ username }}</strong></p>
+    <p>Total Trades Logged: <strong>{{ trade_count }}</strong></p>
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Dashboard</h1>
+    
+    <div class="card">
+        <h3>Total Realised Gains</h3>
+        <p style="font-size: 24px; font-weight: bold;" class="profit">
+            £{{ total_gains|floatformat:2 }}
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>UK Tax Status</h3>
+        <p>Estimated Tax Owed (24%): <strong>£{{ tax_owed|floatformat:2 }}</strong></p>
+        <p>Allowance Remaining: <strong>£{{ allowance_left|floatformat:2 }}</strong></p>
+        <small>Current UK CGT Allowance: £3,000</small>
+    </div>
+
+    <div class="card">
+        <p>Ready to log a new sale? <a href="{% url 'add_trade' %}">Add a Trade</a></p>
+    </div>
+{% endblock %}

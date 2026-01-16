@@ -1,0 +1,48 @@
+{% load static %} <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapitalGuard UK</title>
+    <style>
+        /* Styling */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color:rgb(34, 33, 33); color: #333; }
+        
+        /* Navigation Bar */
+        nav { background-color:rgb(58, 61, 66); padding: 1rem 2rem; display: flex; align-items: center; box-shadow: 0 2px 4px rgba(36, 35, 35, 0.18); }
+        .logo { color: white; font-weight: bold; font-size: 1.2rem; margin-right: auto; }
+        nav a { color:rgb(255, 255, 255); text-decoration: none; margin-left: 20px; font-size: 0.9rem; transition: color 0.3s; }
+        nav a:hover { color:rgb(52, 145, 221); }
+
+        /* Content Container */
+        .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+
+        /* Common Component: The Card */
+        .card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0); margin-bottom: 20px; }
+        
+        /* Success/Profit Colors */
+        .profit { color: #27ae60; font-weight: bold; }
+        .loss { color: #e74c3c; font-weight: bold; }
+        
+        button { cursor: pointer; border-radius: 5px; border: none; transition: opacity 0.3s; }
+        button:hover { opacity: 0.9; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">CapitalGuard UK</div>
+        <a href="{% url 'home' %}">Dashboard</a>
+        <a href="{% url 'history' %}">History</a>
+        <a href="{% url 'add_trade' %}">Add Trade</a>
+        <a href="{% url 'accounts' %}">Account</a>
+    </nav>
+
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+</body>
+</html>
