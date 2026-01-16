@@ -2,7 +2,7 @@
 
 CapitalGuard UK is an actively evolving Django-based web application designed to give UK investors real-time insight into their investment performance and Capital Gains Tax (CGT) exposure. The platform is currently being developed to centralise trade data across multiple asset classes, automate CGT calculations, and provide users with a live view of their **£3,000 annual tax‑free allowance**.
 
-This project is growing into a robust financial tool that blends Python-driven tax logic with SQL-backed data integrity — reflecting the standards expected in modern trading and reporting environments.
+This project is growing into a robust financial tool that blends Python-driven tax logic with SQL-backed data integrity, reflecting the standards expected in modern trading and reporting environments.
 
 ## **Why I'm Building This**
 Before starting this project, I knew absolutely nothing about Capital Gains Tax.
